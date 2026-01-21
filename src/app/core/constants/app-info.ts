@@ -24,5 +24,9 @@ export const APP_INFO = {
         linkedin: '#',
         twitter: '#',
         instagram: '#'
+    },
+    developer: {
+        name: 'Arshdeep Singh',
+        url: 'https://www.arshdeepsingh.info'
     }
 };

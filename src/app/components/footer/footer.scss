@@ -31,7 +31,7 @@
     }
 
     .contact-list li {
-        @apply text-gray-400 py-1 flex items-start gap-1;
+        @apply text-gray-400 block;
     }
 
     .footer-bottom {
