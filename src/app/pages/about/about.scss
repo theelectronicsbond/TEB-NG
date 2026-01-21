@@ -1,0 +1,116 @@
+.banner-section {
+    @apply bg-gray-900 text-white py-24 text-center relative overflow-hidden;
+
+    // Placeholder for a nice background pattern if desired
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x600/1a1a1a/252525?text=About+Us+Header');
+    background-size: cover;
+    background-position: center;
+
+    .banner-content {
+        @apply max-w-7xl mx-auto px-6 relative z-10;
+    }
+
+    .page-title {
+        @apply text-4xl md:text-5xl font-bold mb-4;
+    }
+
+    .page-subtitle {
+        @apply text-xl text-gray-300 font-light;
+    }
+}
+
+.vision-mission-section {
+    @apply py-20 bg-white;
+
+    .container {
+        @apply max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12;
+    }
+
+    .card {
+        @apply p-10 rounded-2xl shadow-lg border border-gray-100 transition-transform hover:-translate-y-1;
+
+        &.mission-card {
+            @apply bg-blue-50 border-blue-100;
+
+            .card-title {
+                @apply text-blue-800;
+            }
+        }
+
+        &.vision-card {
+            @apply bg-purple-50 border-purple-100;
+
+            .card-title {
+                @apply text-purple-800;
+            }
+        }
+    }
+
+    .card-title {
+        @apply text-2xl font-bold mb-4 flex items-center gap-3;
+    }
+
+    .card-text {
+        @apply text-gray-700 leading-relaxed text-lg;
+    }
+}
+
+.values-section {
+    @apply py-24 bg-gray-50;
+
+    .container {
+        @apply max-w-7xl mx-auto px-6;
+    }
+
+    .section-title {
+        @apply text-3xl font-bold text-center text-gray-900 mb-16;
+    }
+
+    .values-grid {
+        @apply grid md:grid-cols-3 lg:grid-cols-5 gap-6;
+    }
+
+    .value-item {
+        @apply bg-white p-6 rounded-xl shadow-sm text-center border border-gray-100 hover:shadow-md transition-shadow;
+
+        .value-name {
+            @apply text-xl font-bold text-gray-800 mb-2;
+        }
+
+        .value-desc {
+            @apply text-sm text-gray-500;
+        }
+    }
+}
+
+.focus-section {
+    @apply py-24 bg-gray-900 text-white text-center;
+
+    .container {
+        @apply max-w-7xl mx-auto px-6 max-w-4xl;
+    }
+
+    .section-title {
+        @apply text-3xl font-bold mb-2;
+    }
+
+    .section-subtitle {
+        @apply text-gray-400 mb-12;
+    }
+
+    .focus-list {
+        @apply flex flex-wrap justify-center gap-8;
+    }
+
+    .focus-item {
+        @apply flex flex-col items-center gap-2;
+
+        .focus-number {
+            @apply text-5xl font-black text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-purple-500 opacity-50;
+        }
+
+        .focus-text {
+            @apply text-lg font-medium text-gray-200 tracking-wide uppercase;
+        }
+    }
+}

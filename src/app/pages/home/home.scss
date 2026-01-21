@@ -1,0 +1,136 @@
+.hero-section {
+    @apply relative bg-gray-900 text-white overflow-hidden;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .hero-content {
+        @apply max-w-7xl mx-auto px-6 py-20 relative z-10 grid lg:grid-cols-2 gap-12 items-center;
+    }
+
+    .hero-title {
+        @apply text-5xl md:text-6xl font-bold leading-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500;
+    }
+
+    .hero-subtitle {
+        @apply text-xl text-gray-300 mb-8 max-w-lg leading-relaxed;
+    }
+
+    .btn-primary {
+        @apply inline-block px-8 py-4 bg-blue-600 text-white font-semibold rounded-full shadow-lg hover:bg-blue-700 transition-all transform hover:-translate-y-1 hover:shadow-blue-500/30;
+    }
+
+    .hero-visual {
+        @apply hidden lg:block;
+
+        .hero-image {
+            @apply rounded-2xl shadow-2xl border border-gray-700 transform rotate-2 hover:rotate-0 transition-transform duration-500;
+        }
+    }
+}
+
+.services-section {
+    @apply py-24 bg-gray-50;
+
+    .section-header {
+        @apply text-center mb-16 px-4;
+    }
+
+    .section-title {
+        @apply text-4xl font-bold text-gray-900 mb-4;
+    }
+
+    .section-subtitle {
+        @apply text-lg text-gray-600 max-w-2xl mx-auto;
+    }
+
+    .services-grid {
+        @apply max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-6;
+    }
+
+    .service-card {
+        @apply bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 border border-gray-100 flex flex-col items-center text-center;
+
+        .icon-wrapper {
+            @apply mb-6 p-4 bg-blue-50 rounded-full group-hover:bg-blue-100 transition-colors;
+
+            img {
+                @apply w-16 h-16 object-contain;
+            }
+        }
+
+        .service-title {
+            @apply text-xl font-bold text-gray-900 mb-3;
+        }
+
+        .service-description {
+            @apply text-gray-600 leading-relaxed;
+        }
+    }
+}
+
+.brands-section {
+    @apply py-20 bg-white border-y border-gray-100;
+
+    .container {
+        @apply max-w-7xl mx-auto px-6;
+    }
+
+    .section-title {
+        @apply text-3xl font-bold text-gray-900 text-center mb-12;
+    }
+
+    .brands-grid {
+        @apply grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center opacity-70 grayscale hover:grayscale-0 transition-all duration-500;
+    }
+
+    .brand-item {
+        @apply text-2xl font-bold text-gray-400 hover:text-gray-800 transition-colors;
+        // Note: In real implementation, these would be images
+    }
+}
+
+.clients-section {
+    @apply py-24 bg-gray-900 text-white;
+
+    .container {
+        @apply max-w-7xl mx-auto px-6 text-center;
+    }
+
+    .section-title {
+        @apply text-4xl font-bold mb-4;
+    }
+
+    .section-subtitle {
+        @apply text-gray-400 mb-16;
+    }
+
+    .clients-grid {
+        @apply flex flex-wrap justify-center gap-6;
+    }
+
+    .client-card {
+        @apply px-8 py-4 bg-gray-800 rounded-lg border border-gray-700 text-lg font-medium text-gray-300 hover:border-blue-500 hover:text-white transition-colors cursor-default;
+    }
+}
+
+.cta-section {
+    @apply py-32 bg-gradient-to-br from-blue-600 to-purple-700 text-white text-center;
+
+    .cta-content {
+        @apply max-w-7xl mx-auto px-6;
+    }
+
+    .cta-title {
+        @apply text-4xl md:text-5xl font-bold mb-6;
+    }
+
+    .cta-text {
+        @apply text-xl text-blue-100 mb-10 max-w-2xl mx-auto;
+    }
+
+    .btn-secondary {
+        @apply inline-block px-10 py-4 bg-white text-blue-700 font-bold rounded-full shadow-xl hover:bg-gray-100 transition-all transform hover:-translate-y-1;
+    }
+}

@@ -1,0 +1,85 @@
+.banner-section {
+    @apply bg-gray-900 text-white py-16 text-center;
+
+    .banner-content {
+        @apply max-w-7xl mx-auto px-6;
+    }
+
+    .page-title {
+        @apply text-4xl font-bold mb-2;
+    }
+
+    .page-subtitle {
+        @apply text-xl text-gray-400;
+    }
+}
+
+.contact-section {
+    @apply py-20 bg-white;
+
+    .container {
+        @apply max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16;
+    }
+
+    .contact-info {
+        @apply space-y-8;
+    }
+
+    .section-title {
+        @apply text-3xl font-bold text-gray-900 mb-2;
+    }
+
+    .section-desc {
+        @apply text-gray-600 mb-8;
+    }
+
+    .info-item {
+        @apply space-y-1;
+
+        .info-label {
+            @apply text-lg font-semibold text-gray-800;
+        }
+
+        .info-text {
+            @apply text-gray-600 leading-relaxed;
+        }
+
+        .link {
+            @apply text-blue-600 hover:underline;
+        }
+    }
+
+    .map-container {
+        @apply mt-8 rounded-xl overflow-hidden shadow-md border border-gray-200;
+    }
+
+    .contact-form-wrapper {
+        @apply bg-gray-50 p-8 rounded-2xl shadow-sm border border-gray-100;
+    }
+
+    .form-title {
+        @apply text-2xl font-bold text-gray-900 mb-6;
+    }
+
+    .contact-form {
+        @apply space-y-6;
+    }
+
+    .form-group {
+        @apply flex flex-col gap-2;
+
+        label {
+            @apply text-sm font-semibold text-gray-700;
+        }
+
+        input,
+        select,
+        textarea {
+            @apply px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 outline-none transition-all bg-white;
+        }
+    }
+
+    .btn-submit {
+        @apply w-full py-3 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 transition-colors shadow-md mt-4;
+    }
+}

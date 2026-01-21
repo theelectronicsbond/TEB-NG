@@ -1,0 +1,70 @@
+.banner-section {
+    @apply bg-blue-900 text-white py-20 text-center;
+
+    .page-title {
+        @apply text-4xl font-bold mb-2;
+    }
+
+    .page-subtitle {
+        @apply text-blue-200 text-lg;
+    }
+}
+
+.solution-block {
+    @apply py-20 px-6 container mx-auto grid md:grid-cols-2 gap-12 items-center;
+
+    &.reverse {
+        // For alternating layout
+        @apply md:flex-row-reverse;
+
+        // In Grid, we can just swap column order if we want, or use specific layouts.
+        // simpler method for grid:
+        .text-content {
+            @apply md:order-2;
+        }
+
+        .image-content {
+            @apply md:order-1;
+        }
+    }
+
+    .text-content {
+        @apply space-y-6;
+    }
+
+    .solution-title {
+        @apply text-3xl font-bold text-gray-900 border-l-4 border-blue-600 pl-4;
+    }
+
+    .solution-desc {
+        @apply text-lg text-gray-600 leading-relaxed;
+    }
+
+    .feature-list {
+        @apply grid gap-3 mt-4;
+
+        li {
+            @apply flex items-center before:content-['•'] before:text-blue-500 before:mr-2 before:text-xl text-gray-700 font-medium;
+        }
+    }
+
+    .image-content {
+        @apply relative overflow-hidden rounded-2xl shadow-xl;
+
+        img {
+            @apply w-full h-full object-cover transition-transform duration-700 hover:scale-105;
+        }
+    }
+}
+
+.cta-section {
+    @apply py-16 bg-gray-100 text-center mt-12;
+
+    h2 {
+        @apply text-2xl font-bold text-gray-800 mb-6;
+    }
+
+    .btn {
+        @apply inline-block px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-md;
+    }
+}

@@ -1,0 +1,51 @@
+.banner-section {
+    @apply bg-blue-900 text-white py-16 text-center;
+
+    .banner-content {
+        @apply max-w-7xl mx-auto px-6;
+    }
+
+    .page-title {
+        @apply text-4xl font-bold mb-2;
+    }
+
+    .page-subtitle {
+        @apply text-xl text-blue-200;
+    }
+}
+
+.clients-section {
+    @apply py-20 bg-gray-50;
+
+    .container {
+        @apply max-w-7xl mx-auto px-6 space-y-16;
+    }
+
+    .industry-title {
+        @apply text-2xl font-bold text-gray-800 mb-8 border-b border-gray-200 pb-2 inline-block px-4;
+    }
+
+    .clients-grid {
+        @apply grid md:grid-cols-2 lg:grid-cols-4 gap-6;
+    }
+
+    .client-card {
+        @apply bg-white p-6 rounded-lg shadow-sm border-l-4 border-blue-500 hover:shadow-md transition-all font-medium text-gray-700 text-lg text-center flex items-center justify-center h-24;
+    }
+}
+
+.cta-section {
+    @apply py-24 bg-white text-center;
+
+    .cta-title {
+        @apply text-3xl font-bold text-gray-900 mb-4;
+    }
+
+    .cta-text {
+        @apply text-gray-600 mb-8 max-w-xl mx-auto;
+    }
+
+    .btn {
+        @apply inline-block px-10 py-3 bg-blue-600 text-white font-semibold rounded-full hover:bg-blue-700 transition-colors shadow-lg;
+    }
+}

@@ -4,10 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "node scripts/sitemap.gen.js && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:the-electronics-bond": "node dist/the-electronics-bond/server/server.mjs"
+    "serve:ssr:the-electronics-bond": "node dist/the-electronics-bond/server/server.mjs",
+    "generate:sitemap": "node scripts/sitemap.gen.js"
   },
   "prettier": {
     "printWidth": 100,
@@ -42,7 +43,10 @@
     "@angular/compiler-cli": "^21.1.0",
     "@types/express": "^5.0.1",
     "@types/node": "^20.17.19",
+    "autoprefixer": "^10.4.23",
     "jsdom": "^27.1.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"
   }

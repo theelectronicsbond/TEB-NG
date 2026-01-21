@@ -1,0 +1,99 @@
+<section class="banner-section">
+    <div class="banner-content">
+        <h1 class="page-title">Contact Us</h1>
+        <p class="page-subtitle">We're here to discuss your audio-visual and electronic needs.</p>
+    </div>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+
+        <div class="contact-info">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-desc">Reach out to our specialized teams for prompt assistance.</p>
+
+            <div class="info-item">
+                <h3 class="info-label">Corporate Office</h3>
+                <p class="info-text">
+                    {{ appInfo.address.line1 }},<br>
+                    {{ appInfo.address.line2 }},<br>
+                    {{ appInfo.address.city }} - {{ appInfo.address.pincode }}, {{ appInfo.address.country }}
+                </p>
+                <p class="info-text" style="font-weight: 500; margin-top: 0.5rem;">
+                    GST NO: {{ appInfo.gst }}
+                </p>
+            </div>
+
+            <div class="info-item">
+                <h3 class="info-label">Key Contact</h3>
+                <p class="info-text">
+                    <strong>{{ appInfo.contactPerson.name }}</strong><br>
+                    {{ appInfo.contactPerson.designation }}
+                </p>
+            </div>
+
+            <div class="info-item">
+                <h3 class="info-label">Phone</h3>
+                <p class="info-text">
+                    <ng-container *ngFor="let phone of appInfo.phones; let last = last">
+                        <a [href]="'tel:' + phone.replace(' ', '')" class="link">{{ phone }}</a><br *ngIf="!last">
+                    </ng-container>
+                </p>
+            </div>
+
+            <div class="info-item">
+                <h3 class="info-label">Email</h3>
+                <p class="info-text">
+                    <a [href]="'mailto:' + appInfo.email" class="link">{{ appInfo.email }}</a>
+                </p>
+            </div>
+
+            <!-- Placeholder for Google Map Embed -->
+            <!-- <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83923192776!2d77.0688975472578!3d28.52758200617607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div> -->
+        </div>
+
+        <div class="contact-form-wrapper">
+            <h2 class="form-title">Send a Message</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="john@company.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="+91 9876543210">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject">
+                        <option>General Inquiry</option>
+                        <option>Sales & Quotation</option>
+                        <option>Support</option>
+                        <option>Partnership</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="How can we help you?"></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</section>

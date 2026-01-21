@@ -1,0 +1,51 @@
+.banner-section {
+    @apply bg-gray-900 text-white py-16 text-center;
+
+    .banner-content {
+        @apply max-w-7xl mx-auto px-6;
+    }
+
+    .page-title {
+        @apply text-4xl font-bold mb-2;
+    }
+
+    .page-subtitle {
+        @apply text-xl text-gray-400;
+    }
+}
+
+.brands-section {
+    @apply py-24 bg-white;
+
+    .container {
+        @apply max-w-7xl mx-auto px-6;
+    }
+
+    .brands-grid {
+        @apply grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8;
+    }
+
+    .brand-card {
+        @apply p-8 border border-gray-100 rounded-xl hover:shadow-lg transition-shadow bg-white flex items-center justify-center grayscale hover:grayscale-0 duration-500 cursor-default;
+
+        img {
+            @apply max-w-full h-auto max-h-16 object-contain;
+        }
+    }
+}
+
+.cta-section {
+    @apply py-20 bg-gray-50 text-center;
+
+    .cta-title {
+        @apply text-3xl font-bold text-gray-900 mb-4;
+    }
+
+    .cta-text {
+        @apply text-gray-600 mb-8;
+    }
+
+    .btn {
+        @apply inline-block px-8 py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-black transition-colors;
+    }
+}
