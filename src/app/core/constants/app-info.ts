@@ -4,7 +4,7 @@ export const APP_INFO = {
     tagline: 'Solution for all your electronics needs',
     contactPerson: {
         name: 'Dev Thakur',
-        designation: 'Business Development Manager'
+        designation: 'Founder & CEO'
     },
     address: {
         line1: 'D 240, 2nd Floor, Madhu Vihar',
@@ -16,7 +16,7 @@ export const APP_INFO = {
     },
     phones: [
         '+91 98730 25712',
-        '+91 82879 18994'
+        '8920746640'
     ],
     email: 'theelectronicsbond@gmail.com',
     gst: '07AMQPT3879E1ZC',
