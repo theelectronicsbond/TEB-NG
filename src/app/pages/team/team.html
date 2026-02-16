@@ -1,0 +1,60 @@
+<section class="banner-section">
+    <div class="banner-content">
+        <h1 class="page-title">
+            Our <span class="highlight">Professional Team</span>
+        </h1>
+        <p class="page-subtitle">
+            Dedicated experts committed to delivering excellence in technology and service.
+        </p>
+    </div>
+</section>
+
+<section class="team-section">
+    <div class="container">
+        <!-- Management Section -->
+        <div class="team-category mb-16">
+            <h2 class="category-header">Leadership</h2>
+            <div class="management-grid">
+                @for (group of managementTeam; track group.name) {
+                @for (member of group.members; track member.name) {
+                <div class="member-card leadership">
+                    <div class="member-avatar">{{ member.icon }}</div>
+                    <div class="member-info">
+                        <h3 class="member-name">{{ member.name }}</h3>
+                        <p class="member-role">{{ member.role }}</p>
+                    </div>
+                </div>
+                }
+                }
+            </div>
+        </div>
+
+        <!-- Departments Section -->
+        <div class="departments-grid">
+            @for (dept of departments; track dept.name) {
+            <div class="dept-col">
+                <h2 class="category-header">{{ dept.name }}</h2>
+                <div class="member-list">
+                    @for (member of dept.members; track member.name) {
+                    <div class="member-card mini">
+                        <div class="member-info">
+                            <h3 class="member-name">{{ member.name }}</h3>
+                            <p class="member-role">{{ member.role }}</p>
+                            <a [href]="'mailto:' + member.handle" class="member-contact">{{ member.handle }}</a>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container mx-auto">
+        <h2 class="cta-title">Business Inquiries</h2>
+        <p class="cta-text">Reach out to our specialized teams for custom solutions and bulk requirements.</p>
+        <a routerLink="/contact" class="btn">Connect With Us</a>
+    </div>
+</section>

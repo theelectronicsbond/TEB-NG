@@ -6,6 +6,7 @@ import { Products } from './pages/products/products';
 import { Brands } from './pages/brands/brands';
 import { Clients } from './pages/clients/clients';
 import { Contact } from './pages/contact/contact';
+import { Team } from './pages/team/team';
 
 export const routes: Routes = [
     {
@@ -54,6 +55,14 @@ export const routes: Routes = [
         data: {
             title: 'Our Clients - The Electronics Bond',
             description: 'See the clients who trust The Electronics Bond.'
+        }
+    },
+    {
+        path: 'team',
+        component: Team,
+        data: {
+            title: 'Our Team - The Electronics Bond',
+            description: 'Meet the dedicated experts at The Electronics Bond.'
         }
     },
     {
